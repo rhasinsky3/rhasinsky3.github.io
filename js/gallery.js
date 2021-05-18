@@ -11,6 +11,10 @@ function activateGallery() {
       // Set clicked image as main image.
       let newImageSrc = thumbnail.dataset.largeVersion;
       mainImage.setAttribute("src", newImageSrc);
+
+      // Change which image is current.
+      document.querySelector(".current").classList.remove("current");
+      thumbnail.parentNode.classSelector("current");
     });
   });
 }
